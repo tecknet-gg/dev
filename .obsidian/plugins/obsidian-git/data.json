@@ -1,5 +1,5 @@
 {
-  "commitMessage": "update {{}}",
+  "commitMessage": "update {{date}}",
   "autoCommitMessage": "update {{date}}",
   "commitMessageScript": "",
   "commitDateFormat": "DD-MM-YYYY",

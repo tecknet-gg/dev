@@ -2,14 +2,14 @@ disabled = false
 languageCode = "en"
 languageName = "English"
 weight = 1
-title = "" # This hides the "Blowfish" text in the top left
+title = "" 
 
 [params]
   displayName = "EN"
   isoCode = "en"
   rtl = false
   dateFormat = "January 2, 2006"
-  description = "Just another blog!"
+  description = ""
   copyright = "© 2026 tecknet.gg"
 
 [params.author]

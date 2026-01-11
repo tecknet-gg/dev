@@ -78,7 +78,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -253,11 +253,11 @@
       "vscode-editor:Create Code File": false
     }
   },
-  "active": "fd3ef9d3a9d83e05",
+  "active": "84ffcda65f2309ba",
   "lastOpenFiles": [
+    "content/blog/blog 1.md",
     "templates/New Blog Post.md",
     "_index.md",
-    "content/blog/blog 1.md",
     "public/css/main.bundle.min.a4afaac4d164a34d3598c811d1c6df51e909a1dd0e0e36ddfe7f909b48ca3a42211e99203f387ea6855c4cdadf47f6af0cc8dadf8fc1dde8a81df2d12faa24a0.css",
     "content/blog/blog 2.md",
     "content/blog/blog 3.md",

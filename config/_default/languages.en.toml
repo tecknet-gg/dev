@@ -9,7 +9,7 @@ title = "" # This hides the "Blowfish" text in the top left
   isoCode = "en"
   rtl = false
   dateFormat = "January 2, 2006"
-  description = "Blog of a student at Sutton Grammar"
+  description = "Just another blog!"
   copyright = "© 2026 tecknet.gg"
 
 [params.author]

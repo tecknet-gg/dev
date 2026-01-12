@@ -27,26 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/blog/_index.md",
+                "file": "archetypes/default.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "_index"
-            }
-          },
-          {
-            "id": "2b2f4e4b298e4ca9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "conflict-files-obsidian-git.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "conflict-files-obsidian-git"
+              "title": "default"
             }
           },
           {
@@ -55,16 +41,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/blog/blog 3.md",
+                "file": "content/blog/bob.md",
                 "mode": "source",
-                "source": true
+                "source": false
               },
               "icon": "lucide-file",
-              "title": "blog 3"
+              "title": "bob"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -240,24 +226,30 @@
       "vscode-editor:Create Code File": false
     }
   },
-  "active": "2b2f4e4b298e4ca9",
+  "active": "6f28485cb10cc1f0",
   "lastOpenFiles": [
-    "conflict-files-obsidian-git.md",
+    "public/favicon-32x32.png",
+    "public/favicon-16x16.png",
+    "resources/_gen/images/images/default_hu_f736fbb084a7a7ea.png",
+    "resources/_gen/images/images/default_hu_ef40b93548c5f0a5.png",
+    "resources/_gen/images/images/default_hu_e71325e071566fe5.png",
+    "resources/_gen/images/images/default_hu_45d7457fbf73aa37.png",
     "content/blog/_index.md",
     "content/blog/bob.md",
-    "content/blog/blog 3.md",
+    "content/book/_index.md",
+    "content/_index.md",
+    "templates/New Misc.md",
     "templates/New Blog Post.md",
-    "_index.md",
+    "templates/New Book Review.md",
+    "assets/images/default.png",
+    "content/blog/blog 3.md",
+    "conflict-files-obsidian-git.md",
     "public/css/main.bundle.min.a4afaac4d164a34d3598c811d1c6df51e909a1dd0e0e36ddfe7f909b48ca3a42211e99203f387ea6855c4cdadf47f6af0cc8dadf8fc1dde8a81df2d12faa24a0.css",
     "content/blog/blog 2.md",
     "public/images/default_hu_45d7457fbf73aa37.png",
     "public/images/default_hu_f736fbb084a7a7ea.png",
-    "resources/_gen/images/images/default_hu_45d7457fbf73aa37.png",
-    "resources/_gen/images/images/default_hu_f736fbb084a7a7ea.png",
     "public/images/default_hu_e71325e071566fe5.png",
     "public/images/default_hu_ef40b93548c5f0a5.png",
-    "resources/_gen/images/images/default_hu_ef40b93548c5f0a5.png",
-    "resources/_gen/images/images/default_hu_e71325e071566fe5.png",
     "resources/_gen/images/images",
     "resources/_gen/images",
     "resources/_gen",
@@ -267,10 +259,6 @@
     "public/tags/art/page/1",
     "public/tags/art/page",
     "public/tags/art/index.xml",
-    "content/book/_index.md",
-    "templates/New Book Review.md",
-    "public/images/default.png",
-    "public/images/Pasted image 20260111145040.png",
     "themes/blowfish/exampleSite/content/users/fec44f5dd2be29e37c305696d018f99f/index.zh-cn.md",
     "themes/blowfish/exampleSite/content/users/fec44f5dd2be29e37c305696d018f99f/index.pt-pt.md",
     "themes/blowfish/exampleSite/content/users/fec44f5dd2be29e37c305696d018f99f/index.pt-br.md",
@@ -285,8 +273,6 @@
     "themes/blowfish/exampleSite/content/users/fd12be5b9c01f6b6089b8b1cbff1350d/index.pt-pt.md",
     "themes/blowfish/exampleSite/content/users/fd12be5b9c01f6b6089b8b1cbff1350d/index.pt-br.md",
     "themes/blowfish/exampleSite/content/users/fd12be5b9c01f6b6089b8b1cbff1350d/index.fr.md",
-    "themes/blowfish/exampleSite/content/users/fd12be5b9c01f6b6089b8b1cbff1350d/index.md",
-    "themes/blowfish/exampleSite/content/users/fd12be5b9c01f6b6089b8b1cbff1350d/index.ja.md",
-    "themes/blowfish/exampleSite/content/users/fd12be5b9c01f6b6089b8b1cbff1350d/index.it.md"
+    "themes/blowfish/exampleSite/content/users/fd12be5b9c01f6b6089b8b1cbff1350d/index.md"
   ]
 }

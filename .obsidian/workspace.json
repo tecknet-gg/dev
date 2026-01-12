@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "archetypes/default.md",
+                "file": "content/blog/bob.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "default"
+              "title": "bob"
             }
           },
           {
@@ -209,8 +209,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -226,15 +225,18 @@
       "vscode-editor:Create Code File": false
     }
   },
-  "active": "6f28485cb10cc1f0",
+  "active": "8ea53d41cd4d377b",
   "lastOpenFiles": [
+    "content/blog/blog 3.md",
+    "content/blog/blog 2.md",
+    "content/blog/_index.md",
+    "archetypes/default.md",
     "public/favicon-32x32.png",
     "public/favicon-16x16.png",
     "resources/_gen/images/images/default_hu_f736fbb084a7a7ea.png",
     "resources/_gen/images/images/default_hu_ef40b93548c5f0a5.png",
     "resources/_gen/images/images/default_hu_e71325e071566fe5.png",
     "resources/_gen/images/images/default_hu_45d7457fbf73aa37.png",
-    "content/blog/_index.md",
     "content/blog/bob.md",
     "content/book/_index.md",
     "content/_index.md",
@@ -242,14 +244,11 @@
     "templates/New Blog Post.md",
     "templates/New Book Review.md",
     "assets/images/default.png",
-    "content/blog/blog 3.md",
     "conflict-files-obsidian-git.md",
     "public/css/main.bundle.min.a4afaac4d164a34d3598c811d1c6df51e909a1dd0e0e36ddfe7f909b48ca3a42211e99203f387ea6855c4cdadf47f6af0cc8dadf8fc1dde8a81df2d12faa24a0.css",
-    "content/blog/blog 2.md",
     "public/images/default_hu_45d7457fbf73aa37.png",
     "public/images/default_hu_f736fbb084a7a7ea.png",
     "public/images/default_hu_e71325e071566fe5.png",
-    "public/images/default_hu_ef40b93548c5f0a5.png",
     "resources/_gen/images/images",
     "resources/_gen/images",
     "resources/_gen",

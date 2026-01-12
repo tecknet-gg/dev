@@ -25,6 +25,9 @@ enableEmoji = true
 [pagination]
   pagerSize = 100
 
+[params]
+  custom_js = ["js/matrix.js"]
+
 [imaging]
   anchor = 'Center'
 

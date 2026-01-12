@@ -2,5 +2,7 @@
   "obsidian-hider",
   "templater-obsidian",
   "obsidian-git",
-  "vscode-editor"
+  "vscode-editor",
+  "terminal",
+  "obsidian-doubleshift"
 ]

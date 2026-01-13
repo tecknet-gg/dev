@@ -7,7 +7,7 @@
 
 colorScheme = "charcoal"
 defaultAppearance = "dark" # valid options: light or dark
-autoSwitchAppearance = true
+autoSwitchAppearance = false
 
 enableA11y = false
 enableSearch = true
@@ -180,11 +180,5 @@ forgejoDefaultServer = "https://v11.next.forgejo.org"
 
 [advertisement]
   # adsense = ""
-
-[params.homepage]
-  layout = "grid" # Ensure layout is set to grid
-  cardView = true
-  # Add or change this line:
-  columnCount = 4 # Options are usually 1, 2, 3, or 4
 
 

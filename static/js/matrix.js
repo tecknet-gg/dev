@@ -93,10 +93,7 @@ function draw() {
       const t = (x / width + y / height) / 2;
       const color = lerpColor(TOP_LEFT, BOTTOM_RIGHT, t);
 
-      let brightness;
-      if (currentPreference === "dark") {
-        brightness = 0.3 + ((n + 1) / 2) * 0.7;
-      }
+      let brightness = 0.3 + ((n + 1) / 2) * 0.7;
 
       const r = Math.floor(color.r * brightness);
       const g = Math.floor(color.g * brightness);

@@ -1,0 +1,149 @@
+article.relative.flex.flex-col, 
+.thumbnail_card,
+article.min-h-full {
+    backdrop-filter: blur(12px) !important;
+    -webkit-backdrop-filter: blur(12px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+html[data-appearance="dark"] article {
+    background-color: rgba(15, 15, 20, 0.5) !important;
+}
+
+html[data-appearance="light"] article {
+    background-color: rgba(255, 255, 255, 0.6) !important;
+    border: 1px solid rgba(0, 0, 0, 0.1) !important;
+}
+
+html[data-appearance="light"] h1, 
+html[data-appearance="light"] h2, 
+html[data-appearance="light"] .text-neutral-900,
+html[data-appearance="light"] .main-menu a {
+    color: #000000 !important; 
+    text-shadow: 0px 0px 10px rgba(255,255,255,0.8); 
+}
+
+html[data-appearance="dark"] h1, 
+html[data-appearance="dark"] h2,
+html[data-appearance="dark"] .main-menu a {
+    color: #ffffff !important;
+}
+
+header.relative, 
+.flex.flex-col.items-center.justify-center,
+.relative.px-1.py-1.flex.flex-col.items-center {
+    background-color: transparent !important;
+    background: none !important;
+    backdrop-filter: none !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+/* Target the specific img wrapper */
+img.rounded-full {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.bg-neutral, 
+.dark .bg-neutral-800,
+main#main-content {
+    background-color: transparent !important;
+}
+
+body {
+    background-color: transparent !important;
+}
+
+/* layout fix */
+.max-w-prose, 
+#main-content .prose, 
+article,
+header.mt-5.max-w-prose { 
+    max-width: 850px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 100% !important;
+}
+
+.bg-neutral, .dark .bg-neutral-800 {
+    background-color: transparent !important;
+}
+
+/* hide appeareance toggle */
+#appearance-switcher, 
+.appearance-switch,
+button[aria-label="Appearance"],
+.flex.p-1.ml-2.rounded-full {
+    display: none !important;
+}
+
+.flex.items-center.justify-end {
+    gap: 1rem;
+}
+
+.type-posts main, 
+.kind-page:not(.layout-about) main {
+    position: relative;
+    z-index: 1;
+}
+
+.type-posts main::before,
+.kind-page:not(.layout-about) main::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+
+    /*glass stuff */
+    backdrop-filter: blur(8px) brightness(0.8) !important;
+    -webkit-backdrop-filter: blur(8px) brightness(0.8) !important;
+    background-color: rgba(0, 0, 0, 0.3); 
+    
+    z-index: -1; 
+    pointer-events: none; 
+}
+
+.prose {
+    max-width: 900px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 100% !important;
+    text-align: left !important;
+}
+
+h1, h2, h3, .prose {
+    color: #ffffff !important;
+    position: relative;
+    z-index: 2; 
+}
+
+aside, 
+.toc-container, 
+#toc,
+.table-of-contents {
+    display: none !important;
+    visibility: hidden !important;
+    width: 0 !important;
+    height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+body.type-posts .lg\:grid, 
+body.kind-page:not(.home) .lg\:grid {
+    display: block !important; 
+}
+
+article, .layout-wrapper, .relative.flex.flex-col {
+    background-color: transparent !important;
+}
+
+/* pls work */
+
+html {
+  font-size: 14pt;
+}

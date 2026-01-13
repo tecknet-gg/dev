@@ -26,7 +26,10 @@ enableEmoji = true
   pagerSize = 100
 
 [params]
-  custom_js = ["js/matrix.js"]
+#  custom_js = ["js/matrix.js"]
+  customCss = ["css/custom.css"]
+  defaultAppearance = "dark"
+  disableAppearanceLink = true
 
 [imaging]
   anchor = 'Center'

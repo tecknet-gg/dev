@@ -84,7 +84,7 @@ forgejoDefaultServer = "https://v11.next.forgejo.org"
   showPagination = true
   invertPagination = false
   showReadingTime = true
-  showTableOfContents = true
+  showTableOfContents = false
   # showRelatedContent = false
   # relatedContentLimit = 3
   showTaxonomies = true # use showTaxonomies OR showCategoryOnly, not both
@@ -180,3 +180,11 @@ forgejoDefaultServer = "https://v11.next.forgejo.org"
 
 [advertisement]
   # adsense = ""
+
+[params.homepage]
+  layout = "grid" # Ensure layout is set to grid
+  cardView = true
+  # Add or change this line:
+  columnCount = 4 # Options are usually 1, 2, 3, or 4
+
+

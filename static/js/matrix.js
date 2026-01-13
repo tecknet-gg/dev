@@ -72,17 +72,22 @@ function lerpColor(c1, c2, t) {
 
 function draw() {
   currentPreference = localStorage.getItem("appearance");
-  if(currentPreference=="dark") {
-    ctx.fillStyle = 'rgb(0, 0, 0)'; // dark background
-    TOP_LEFT = { r: 46, g: 31, b: 255 };
-    BOTTOM_RIGHT = { r: 255, g: 136, b: 31 }; 
+  
+  if(currentPreference === "dark") {
+    ctx.fillStyle = 'rgb(0, 0, 0)'; 
+    TOP_LEFT = { r: 46, g: 31, b: 255 };      // Deep Blue
+    BOTTOM_RIGHT = { r: 255, g: 136, b: 31 };  // Electric Orange
   } else {
-    ctx.fillStyle = 'rgb(255,255,255)'; 
-    TOP_LEFT = { r: 125, g: 125, b: 125 };   
-    BOTTOM_RIGHT = { r: 255, g: 255, b: 255 }; 
+    // LIGHT MODE: Light Blue to Soft Orange reference
+    ctx.fillStyle = 'rgb(248, 249, 252)';      // Soft Paper Background
+    TOP_LEFT     = { r: 100, g: 150, b: 255 }; // Clear Sky Blue
+    BOTTOM_RIGHT = { r: 255, g: 180, b: 100 }; // Muted Sunset Orange
   }
 
-    ctx.fillRect(0, 0, width, height);
+  ctx.fillRect(0, 0, width, height);
+
+  // Set character density/transparency
+  ctx.globalAlpha = currentPreference === "dark" ? 1.0 : 0.4;
 
   ctx.font = `bold ${RES}px Helvetica`;
   ctx.textAlign = 'left';
@@ -95,11 +100,17 @@ function draw() {
       const n = noise(i * SCALE, j * SCALE, zTime);
 
       const char = n > 0 ? "0" : "1";
-
       const t = (x / width + y / height) / 2;
       const color = lerpColor(TOP_LEFT, BOTTOM_RIGHT, t);
 
-      const brightness = 0.3 + ((n + 1) / 2) * 0.7;
+      let brightness;
+      if (currentPreference === "dark") {
+        brightness = 0.3 + ((n + 1) / 2) * 0.7;
+      } else {
+        // In Light Mode, we want the characters slightly darker than the paper
+        // so they look "printed" or "etched"
+        brightness = 0.7 - ((n + 1) / 2) * 0.3; 
+      }
 
       const r = Math.floor(color.r * brightness);
       const g = Math.floor(color.g * brightness);
@@ -109,9 +120,9 @@ function draw() {
       ctx.fillText(char, x, y);
     }
   }
-
+  
+  ctx.globalAlpha = 1.0;
   zTime += SPEED;
   requestAnimationFrame(draw);
 }
-
 draw();

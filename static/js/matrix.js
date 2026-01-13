@@ -72,21 +72,11 @@ function lerpColor(c1, c2, t) {
 
 function draw() {
   currentPreference = localStorage.getItem("appearance");
-  
-  if(currentPreference === "dark") {
-    ctx.fillStyle = 'rgb(0, 0, 0)'; 
-    TOP_LEFT = { r: 46, g: 31, b: 255 };      // Deep Blue
-    BOTTOM_RIGHT = { r: 255, g: 136, b: 31 };  // Electric Orange
-  } else {
-    // LIGHT MODE: Light Blue to Soft Orange reference
-    ctx.fillStyle = 'rgb(248, 249, 252)';      // Soft Paper Background
-    TOP_LEFT     = { r: 100, g: 150, b: 255 }; // Clear Sky Blue
-    BOTTOM_RIGHT = { r: 255, g: 180, b: 100 }; // Muted Sunset Orange
-  }
-
+  ctx.fillStyle = 'rgb(0, 0, 0)'; 
+  TOP_LEFT = { r: 46, g: 31, b: 255 };      // Deep Blue
+  BOTTOM_RIGHT = { r: 255, g: 136, b: 31 };  // Electric Orange
   ctx.fillRect(0, 0, width, height);
 
-  // Set character density/transparency
   ctx.globalAlpha = currentPreference === "dark" ? 1.0 : 0.4;
 
   ctx.font = `bold ${RES}px Helvetica`;
@@ -106,10 +96,6 @@ function draw() {
       let brightness;
       if (currentPreference === "dark") {
         brightness = 0.3 + ((n + 1) / 2) * 0.7;
-      } else {
-        // In Light Mode, we want the characters slightly darker than the paper
-        // so they look "printed" or "etched"
-        brightness = 0.7 - ((n + 1) / 2) * 0.3; 
       }
 
       const r = Math.floor(color.r * brightness);

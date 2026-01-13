@@ -4,29 +4,14 @@ article.min-h-full {
     backdrop-filter: blur(12px) !important;
     -webkit-backdrop-filter: blur(12px) !important;
     border: 1px solid rgba(255, 255, 255, 0.1) !important;
-}
-
-html[data-appearance="dark"] article {
     background-color: rgba(15, 15, 20, 0.5) !important;
 }
 
-html[data-appearance="light"] article {
-    background-color: rgba(255, 255, 255, 0.6) !important;
-    border: 1px solid rgba(0, 0, 0, 0.1) !important;
-}
-
-html[data-appearance="light"] h1, 
-html[data-appearance="light"] h2, 
-html[data-appearance="light"] .text-neutral-900,
-html[data-appearance="light"] .main-menu a {
-    color: #000000 !important; 
-    text-shadow: 0px 0px 10px rgba(255,255,255,0.8); 
-}
-
-html[data-appearance="dark"] h1, 
-html[data-appearance="dark"] h2,
-html[data-appearance="dark"] .main-menu a {
+/* Unified text and title colors - removed light mode overrides */
+h1, h2, h3, .prose, .main-menu a, .text-neutral-900 {
     color: #ffffff !important;
+    position: relative;
+    z-index: 2;
 }
 
 header.relative, 
@@ -48,10 +33,7 @@ img.rounded-full {
 
 .bg-neutral, 
 .dark .bg-neutral-800,
-main#main-content {
-    background-color: transparent !important;
-}
-
+main#main-content,
 body {
     background-color: transparent !important;
 }
@@ -67,12 +49,9 @@ header.mt-5.max-w-prose {
     width: 100% !important;
 }
 
-.bg-neutral, .dark .bg-neutral-800 {
-    background-color: transparent !important;
-}
-
-/* hide appeareance toggle */
+/* hide appearance toggle and mobile versions */
 #appearance-switcher, 
+#appearance-switcher-mobile,
 .appearance-switch,
 button[aria-label="Appearance"],
 .flex.p-1.ml-2.rounded-full {
@@ -107,20 +86,6 @@ button[aria-label="Appearance"],
     pointer-events: none; 
 }
 
-.prose {
-    max-width: 900px !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
-    width: 100% !important;
-    text-align: left !important;
-}
-
-h1, h2, h3, .prose {
-    color: #ffffff !important;
-    position: relative;
-    z-index: 2; 
-}
-
 aside, 
 .toc-container, 
 #toc,
@@ -146,4 +111,5 @@ article, .layout-wrapper, .relative.flex.flex-col {
 
 html {
   font-size: 14pt;
+  background-color: #000000 !important; /* Forces the very base to stay dark */
 }

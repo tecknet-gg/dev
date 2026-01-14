@@ -10,7 +10,7 @@
           {
             "id": "2f3d0e42b681ca87",
             "type": "tabs",
-            "dimension": 44.57323498419389,
+            "dimension": 66.7017913593256,
             "children": [
               {
                 "id": "4f89b457ddb7791f",
@@ -60,7 +60,7 @@
           {
             "id": "509c9a529167ed64",
             "type": "tabs",
-            "dimension": 55.42676501580611,
+            "dimension": 33.298208640674396,
             "children": [
               {
                 "id": "018cc7e84851f599",
@@ -284,6 +284,7 @@
   "active": "018cc7e84851f599",
   "lastOpenFiles": [
     "content/blog/this website.md",
+    "assets/images/hugo.png",
     "content/blog/blog 3 1.md",
     "content/blog/blog 3 1 1.md",
     "content/blog/blog 3 1 2.md",
@@ -308,7 +309,6 @@
     "resources/_gen/images/images/castle_hu_a48036c841d1fe94.jpeg",
     "resources/_gen/images/images/castle_hu_ef54eb027dce38e6.jpeg",
     "content/blog/blog 3.md",
-    "assets/images/castle.jpeg",
     "content/resume/_index.md",
     "content/projects/_index.md",
     "content/blog/_index.md",

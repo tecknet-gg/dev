@@ -12,7 +12,7 @@
 
 [[main]]
   name = "About Me"
-  pageRef = "/" #points to the root page
+  pageRef = "/home" 
   weight = 10
 
 [[main]]

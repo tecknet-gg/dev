@@ -63,6 +63,8 @@ forgejoDefaultServer = "https://v11.next.forgejo.org"
   layoutBackgroundBlur = false # only used when layout equals background
   disableHeroImageFilter = false # only used when layout equals hero
 
+
+
 [article]
   showDate = true
   showViews = false # maybe turn off?
@@ -181,5 +183,6 @@ forgejoDefaultServer = "https://v11.next.forgejo.org"
 
 [advertisement]
   # adsense = ""
+
 
 

@@ -72,11 +72,13 @@
 
   
   <meta property="og:url" content="http://localhost:1313/">
+  <meta property="og:title" content="Welcome to My Profile">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="website">
 
   
   <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Welcome to My Profile">
 
   
   
@@ -123,8 +125,8 @@
   <link
     type="text/css"
     rel="stylesheet"
-    href="/css/main.bundle.min.d72723f98200eddff34ecab2e662b83eb9f1038c20263d75f8492b049d9715e76542478251ba95538240609c15c1355f0c0ae1b048b68dc45382c83013cf6e59.css"
-    integrity="sha512-1ycj&#43;YIA7d/zTsqy5mK4PrnxA4wgJj11&#43;EkrBJ2XFedlQkeCUbqVU4JAYJwVwTVfDArhsEi2jcRTgsgwE89uWQ==">
+    href="/css/main.bundle.min.791724a01d05bd7e4d81ef2a7429c8f444f91e1b6cef611964683e0ac4b8ea422d204fe73637bff9a9449ac6b17c0c14247ff6bd3ca3c800c5062f7a67545620.css"
+    integrity="sha512-eRckoB0FvX5Nge8qdCnI9ET5Hhts72EZZGg&#43;CsS46kItIE/nNje/&#43;alEmsaxfAwUJH/2vTyjyADFBi96Z1RWIA==">
 
   
   
@@ -310,7 +312,7 @@
       
       class="flex items-center bf-icon-color-hover"
       aria-label="About Me"
-      title="">
+      title="Welcome to My Profile">
       
       
         <span class="text-base font-medium break-normal">
@@ -328,7 +330,7 @@
       
       class="flex items-center bf-icon-color-hover"
       aria-label="Blog"
-      title="The Blog">
+      title="Blog">
       
       
         <span class="text-base font-medium break-normal">
@@ -351,24 +353,6 @@
       
         <span class="text-base font-medium break-normal">
           Books
-        </span>
-      
-    </a>
-  
-
-    
-      
-  
-    <a
-      href="/resume/"
-      
-      class="flex items-center bf-icon-color-hover"
-      aria-label="Resume"
-      title="resume">
-      
-      
-        <span class="text-base font-medium break-normal">
-          Resume
         </span>
       
     </a>
@@ -461,7 +445,7 @@
         
         class="flex items-center gap-4 group bf-icon-color-hover text-neutral-700 dark:text-neutral-200">
         
-        <span title="" class="text-2xl font-bold tracking-tight">
+        <span title="Welcome to My Profile" class="text-2xl font-bold tracking-tight">
           About Me
         </span>
         
@@ -478,7 +462,7 @@
         
         class="flex items-center gap-4 group bf-icon-color-hover text-neutral-700 dark:text-neutral-200">
         
-        <span title="The Blog" class="text-2xl font-bold tracking-tight">
+        <span title="Blog" class="text-2xl font-bold tracking-tight">
           Blog
         </span>
         
@@ -497,23 +481,6 @@
         
         <span title="Bookshelf" class="text-2xl font-bold tracking-tight">
           Books
-        </span>
-        
-      </a>
-
-      
-    </div>
-  
-    
-    <div class="px-2">
-      <a
-        href="/resume/"
-        aria-label="Resume"
-        
-        class="flex items-center gap-4 group bf-icon-color-hover text-neutral-700 dark:text-neutral-200">
-        
-        <span title="resume" class="text-2xl font-bold tracking-tight">
-          Resume
         </span>
         
       </a>
@@ -601,7 +568,7 @@
     </h1>
     
       <h2 class="text-xl text-neutral-500 dark:text-neutral-400">
-        tecknet.gg
+        <span id='typeit-target'></span>
       </h2>
     
     <div class="mt-1 text-2xl">
@@ -678,7 +645,35 @@
 
     </div>
   </header>
-  <section class="prose dark:prose-invert w-full"></section>
+  <section class="prose dark:prose-invert w-full"><p>Hi! I&rsquo;m Jeevan, a 16 year old student slogging through their A-Levels. This site was mainly created out of wanting to have a site. Now that I have it, I don&rsquo;t particularly know what to do with it. So its a blog? I suppose I&rsquo;ll try and keep things updated (not that anyone is reading this, but I operate on levels of delusion).  If you do happen to find this, you can find some write ups on some stuff that I probably read in an article and think was cool so I decided to dedicate an evening to learning. That is assuming that you&rsquo;re reading this a solid few months after I&rsquo;m writing, the whole website is a tad bit barren right now&hellip;</p>
+<script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+<script>
+  const hasPlayed = sessionStorage.getItem("typeitPlayed");
+  const target = document.querySelector("#typeit-target");
+
+  if (hasPlayed) {
+    target.innerText = "tecknet.gg"; 
+  } else {
+    new TypeIt("#typeit-target", {
+      strings: ["Student", "Engineer", "Programmer","Guy", "Bob", "I'm running out of tags","Ok I'll stop","tecknet.gg"],
+      speed: 70,
+      deleteSpeed: 50,
+      nextStringDelay: 1500,
+      breakLines: false,
+      loop: false,
+      cursor: true,
+      waitUntilVisible: true,
+      afterComplete: function (instance) {
+        sessionStorage.setItem("typeitPlayed", "true"); 
+        setTimeout(() => {
+          instance.destroy();
+        }, 1000);
+      },
+    }).go();
+  }
+</script>
+<hr>
+</section>
 </article>
 <section>
   

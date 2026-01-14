@@ -1,35 +1,29 @@
+.type-posts main::before,
+.kind-page:not(.layout-about):not(.home) main::before,
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(8px) brightness(0.8) !important;
+    -webkit-backdrop-filter: blur(8px) brightness(0.8) !important;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: -1; 
+    pointer-events: none; 
+}
+
 article.relative.flex.flex-col, 
 .thumbnail_card,
-article.min-h-full {
+article.min-h-full,
+.layout-profile .flex.flex-col.items-center.text-center {
     backdrop-filter: blur(12px) !important;
     -webkit-backdrop-filter: blur(12px) !important;
     border: 1px solid rgba(255, 255, 255, 0.1) !important;
-    background-color: rgba(15, 15, 20, 0.5) !important;
+    background-color: rgba(15, 15, 20, 0.6) !important;
 }
 
-/* Unified text and title colors - removed light mode overrides */
-h1, h2, h3, .prose, .main-menu a, .text-neutral-900 {
-    color: #ffffff !important;
-    position: relative;
-    z-index: 2;
-}
-
-header.relative, 
-.flex.flex-col.items-center.justify-center,
-.relative.px-1.py-1.flex.flex-col.items-center {
-    background-color: transparent !important;
-    background: none !important;
-    backdrop-filter: none !important;
-    border: none !important;
-    box-shadow: none !important;
-}
-
-/* Target the specific img wrapper */
-img.rounded-full {
-    background: transparent !important;
-    border: none !important;
-    box-shadow: none !important;
-}
 
 .bg-neutral, 
 .dark .bg-neutral-800,
@@ -38,93 +32,127 @@ body {
     background-color: transparent !important;
 }
 
-/* layout fix */
+
+h1, h2, h3, .prose, .main-menu a, .text-neutral-900 {
+    color: #ffffff !important;
+}
+
+
+img.rounded-full {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    height: auto !important;
+    max-width: 200px; 
+}
+
 .max-w-prose, 
 #main-content .prose, 
-article,
-header.mt-5.max-w-prose { 
+article { 
     max-width: 850px !important;
     margin-left: auto !important;
     margin-right: auto !important;
     width: 100% !important;
 }
 
-.bg-neutral, .dark .bg-neutral-800 {
-    background-color: transparent !important;
+/* Add a subtle shine when hovering over cards */
+article.relative.flex.flex-col:hover, 
+.thumbnail_card:hover {
+    background-color: rgba(255, 255, 255, 0.08) !important;
+    border: 1px solid rgba(255, 255, 255, 0.3) !important;
+    transform: translateY(-4px);
+    box-shadow: 0 0 30px rgba(59, 130, 246, 0.2) !important; /* Subtle blue glow */
+    transition: all 0.3s ease-in-out;
 }
 
-/* hide appearance toggle and mobile versions */
-#appearance-switcher, 
-#appearance-switcher-mobile,
-.appearance-switch,
-button[aria-label="Appearance"],
-.flex.p-1.ml-2.rounded-full,
-#footer-appearance-switcher {
-    display: none !important;
+
+/* Sharp White Headline */
+#typeit-target {
+    color: #ffffff !important; 
+    font-size: 1.1em;
+    text-shadow: none !important; /* Removes any leftover glow */
+    font-weight: 500;
 }
 
-.flex.items-center.justify-end {
-    gap: 1rem;
+/* Customize the cursor to be white as well */
+.ti-cursor {
+    color: #ffffff !important;
+    font-weight: bold;
 }
 
-.type-posts main, 
-.kind-page:not(.layout-about):not(.home) main {
-    position: relative;
-    z-index: 1;
+/* Remove the "guest@tecknet" prompt if you don't want it anymore */
+#typeit-target::before {
+    content: "" !important;
 }
 
-.type-posts main::before,
-.kind-page:not(.layout-about):not(.home) main::before {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-
-    /*glass stuff */
-    backdrop-filter: blur(8px) brightness(0.8) !important;
-    -webkit-backdrop-filter: blur(8px) brightness(0.8) !important;
-    background-color: rgba(0, 0, 0, 0.3); 
-    
-    z-index: -1; 
-    pointer-events: none; 
+.layout-profile h1, 
+article h2, 
+.prose h1, .prose h2 {
+    color: #ffffff !important;
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.2), 0 2px 4px rgba(0,0,0,0.8) !important;
 }
 
+
+.text-xl, 
+.text-neutral-500, 
 .prose {
-    max-width: 900px !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
-    width: 100% !important;
-    text-align: left !important;
+    color: rgba(255, 255, 255, 0.85) !important;
 }
 
-aside, 
-.toc-container, 
-#toc,
-.table-of-contents {
-    display: none !important;
-    visibility: hidden !important;
-    width: 0 !important;
-    height: 0 !important;
-    margin: 0 !important;
-    padding: 0 !important;
+#typeit-target {
+    color: #ffffff !important;
+    font-weight: 700 !important; /* Bolder look from original */
+    letter-spacing: 0.02em;
 }
 
-/* Updated selector to ensure homepage grid remains intact */
-body.type-posts .lg\:grid, 
-body.kind-page:not(.home) .lg\:grid {
-    display: block !important; 
+.main-menu a {
+    color: rgba(255, 255, 255, 0.7) !important;
 }
 
-article, .layout-wrapper, .relative.flex.flex-col {
-    background-color: transparent !important;
+.main-menu a:hover {
+    color: #ffffff !important;
+    text-decoration: underline;
 }
 
-/* pls work */
+/* Base state: White */
+a, 
+.text-primary-600,
+.main-menu a,
+.layout-profile .flex.flex-row a {
+    color: #ffffff !important;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
 
-html {
-  font-size: 14pt;
-  background-color: #000000 !important; 
-  color-scheme: dark; /* Extra hint to the browser to stay dark */
+/* Hover state: Blue */
+a:hover, 
+.main-menu a:hover,
+.layout-profile .flex.flex-row a:hover {
+    color: #ea9814 !important; 
+}
+
+
+.prose, 
+.text-neutral-500, 
+.text-neutral-600,
+article p,
+section p {
+    color: #ffffff !important; /* Pure White */
+    font-weight: 500 !important; /* Makes it "thicker" without being "bold" */
+    opacity: 1 !important;    /* Removes any theme transparency */
+    line-height: 1.7;          /* Adds a bit of space for readability */
+    -webkit-font-smoothing: antialiased;
+}
+
+.prose h1, .prose h2, .prose h3 {
+    color: #ffffff !important;
+    font-weight: 800 !important;
+    letter-spacing: -0.01em;
+}
+
+.thumbnail_card .text-neutral-800,
+.thumbnail_card .text-neutral-700,
+article .flex-grow p {
+    color: #ffffff !important;
+    font-weight: 500 !important;
 }

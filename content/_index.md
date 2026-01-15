@@ -9,23 +9,24 @@ Hi! I'm Jeevan, a 16 year old student slogging through their A-Levels. This site
 
 <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
 <script>
-  const hasPlayed = sessionStorage.getItem("typeitPlayed");
+  const hasSeenForever = localStorage.getItem("typeitFinishedForever");
   const target = document.querySelector("#typeit-target");
-
-  if (hasPlayed) {
-    target.innerText = "tecknet.gg"; 
+  if (hasSeenForever) {
+    target.innerText = "tecknet.gg";  // permanent text
+    target.classList.add("color-shift"); 
   } else {
     new TypeIt("#typeit-target", {
-      strings: ["Student", "Engineer", "Programmer","Guy", "Bob", "I'm running out of tags","Ok I'll stop","tecknet.gg"],
-      speed: 70,
-      deleteSpeed: 50,
+      strings: ["Student", "Engineer", "Self Proclaimed Nerd", "I'm running out of tags", "I'll stop now...","tecknet.gg"],
+      speed: 60,
+      deleteSpeed: 40,
       nextStringDelay: 1500,
       breakLines: false,
       loop: false,
       cursor: true,
       waitUntilVisible: true,
       afterComplete: function (instance) {
-        sessionStorage.setItem("typeitPlayed", "true"); 
+        localStorage.setItem("typeitFinishedForever", "true");
+        target.classList.add("color-shift");
         setTimeout(() => {
           instance.destroy();
         }, 1000);

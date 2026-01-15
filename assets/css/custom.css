@@ -156,3 +156,32 @@ article .flex-grow p {
     color: #ffffff !important;
     font-weight: 500 !important;
 }
+
+/* 1. Target ONLY links inside blog/article body text */
+.prose p a, 
+.prose li a, 
+.prose blockquote a {
+    /* Force permanent Sunset Orange */
+    color: #ffb347 !important;
+    background: none !important; /* Disables the gradient from the previous step */
+    -webkit-text-fill-color: initial !important; /* Resets the transparent text trick */
+    
+    font-weight: 700 !important;
+    text-decoration: none !important;
+    transition: all 0.3s ease;
+    
+    /* Subtle orange glow to match the TypeIt text */
+    text-shadow: 0 0 5px rgba(255, 179, 71, 0.2);
+}
+
+/* 2. Hover effect for these specific blog links */
+.prose p a:hover, 
+.prose li a:hover, 
+.prose blockquote a:hover {
+    color: #ffffff !important; /* Flips to white on hover for contrast */
+    text-shadow: 0 0 10px rgba(255, 179, 71, 0.5);
+    background-color: rgba(255, 179, 71, 0.1) !important; /* Slight highlight */
+}
+
+/* 3. Ensure other links (Nav, Profile, Socials) stay as they were */
+/* No changes needed here, as the selectors above are very specific to article body text */

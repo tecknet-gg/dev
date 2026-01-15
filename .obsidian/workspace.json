@@ -10,7 +10,7 @@
           {
             "id": "2f3d0e42b681ca87",
             "type": "tabs",
-            "dimension": 66.7017913593256,
+            "dimension": 60.59009483667018,
             "children": [
               {
                 "id": "4f89b457ddb7791f",
@@ -46,12 +46,12 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "content/_index.md",
+                    "file": "content/blog/this website.md",
                     "mode": "source",
-                    "source": true
+                    "source": false
                   },
                   "icon": "lucide-file",
-                  "title": "_index"
+                  "title": "this website"
                 }
               }
             ],
@@ -60,7 +60,7 @@
           {
             "id": "509c9a529167ed64",
             "type": "tabs",
-            "dimension": 33.298208640674396,
+            "dimension": 39.409905163329825,
             "children": [
               {
                 "id": "018cc7e84851f599",
@@ -281,19 +281,20 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "018cc7e84851f599",
+  "active": "4f5a3805db695528",
   "lastOpenFiles": [
+    "public/tags/perlin/index.xml",
+    "public/tags/perlin/page/1/index.html",
+    "public/tags/perlin/page/1",
+    "public/tags/perlin/page",
+    "public/tags/perlin/index.html",
+    "public/tags/perlin",
+    "public/tags/obsidian/index.xml",
+    "public/tags/obsidian/page/1/index.html",
+    "public/tags/obsidian/page/1",
+    "public/tags/obsidian/page",
+    "public/tags/obsidian/index.html",
     "content/_index.md",
-    "public/css/main.bundle.min.247de88cccc5bf87c4348d972a536d340f0ce9a15d9b8c0f97131d4125bf2a95caf63b66a85926285c013854416e172a19f4ffc90943e6ef54ca03ec70621ac8.css",
-    "public/css/main.bundle.min.791724a01d05bd7e4d81ef2a7429c8f444f91e1b6cef611964683e0ac4b8ea422d204fe73637bff9a9449ac6b17c0c14247ff6bd3ca3c800c5062f7a67545620.css",
-    "public/css/main.bundle.min.81b04b64995287964b1c1d27506f05eb7e7595d5098642e6a2d6e883707ec09ede5b5eeb10b2ee4cf3f7ba0d25d83c03270cfea639bab47be37ea48182093043.css",
-    "public/css/main.bundle.min.e299842e690892549acea0182fd050143b24cf7ef4cc80e0328b9e9a5177823e50c59d68dfd48338ace13dd08f83c1db36e7aa55378b261d1d18918d284889ca.css",
-    "public/css/main.bundle.min.7d97682bdabbfee333264cb2d4970cd6b35fce6cf3a1b3ca9f8d46b21716d7922a04520051f8c54773f544052f64aea694e700511539e7e915321d3cb58d9eb0.css",
-    "public/css/main.bundle.min.1ca34553ea14517eb3bcbfd742a8d0cfe79d2a5ccf1a28d972e370f7c12ef520fc2421041918b2f17fc0145f8b0c34bee3ea8bc55eb4d744e29d1f2b85aac7ba.css",
-    "public/css/main.bundle.min.5d43e3247cd05329fd1b1cd92c84a7b86eb8c4f58b461bf18094021319d5a7b2a4e1aeefbd1fcf5cf1493796cf5175817a12cbc10022066435ff961f6760f691.css",
-    "public/css/main.bundle.min.5338453fdd68229786388753ddb3329d8260be296e14c1ad4ab6e925d2978039939d7c694a65cf3143ee1ca38d8a84972dff0e0a477d096c41edb9f2f28a583c.css",
-    "public/css/main.bundle.min.5f5db876cb45b555a91ad5443dd45eb6d838470a424e016adc612a41ff2b081e069f7fbe2eb67e645314630daf961a0b22925393feb538375661dcf84aea6d9c.css",
-    "public/css/main.bundle.min.0572bb0cabfbba9d7992e739e7551cd43a4f5ab9cdb95e211c3742d89749f4399350c055532feb54c700ad4986a43c82112ff4ea6ce137e50ce6db3b873f8708.css",
     "resources/_gen/images/images/pfp_hu_8bf6656258aae089.jpg",
     "resources/_gen/images/images/pfp_hu_23a2909d76b0ae5d.jpg",
     "resources/_gen/images/images/hugo_hu_bfe010fda223a4aa.png",

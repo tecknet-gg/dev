@@ -6,6 +6,8 @@ summary: The tech stack I used for this static site.
 tags:
   - website
   - hugo
+  - obsidian
+  - perlin
 featureImage: /images/hugo.png
 showReadingTime: true
 showTableOfContents: false
@@ -16,7 +18,7 @@ The only problem was that I'm not really a developer. I've never really messed a
 
 Regardless, I would deem myself at least somewhat competent, and I thought I could make a cool looking website without ever having to really learn web development (now that I say that I realise that wasn't the best attitude to go into this with, but whatever). And in my research for a solution to this very problem I came across [Hugo](https://gohugo.io/), a really cool, more importantly easy to use static site generator. Using Hugo, all I would need to do is install a theme and modify the CSS and other configs a bit to my liking, and voila, cool portfolio (notice how its no longer a "dev" portfolio). A bit of searching later, I saw that [Blowfish](https://blowfish.page/) was all the rage, and so I set up a GitHub repository (so we can host using GitHub Pages), and set about tweaking it to my liking. 
 
-After a good few hours alt-tabbing between the various .toml config files and some more painful hours of debugging why GitHub couldn't build, it I had a working site! It was sadly the default Blowfish themed site, and this wouldn't do. Coincidentally, I built this cool looking Perlin Theme in Python the other day:
+After a good few hours alt-tabbing between the various .toml config files and the docs, and some more painful hours of debugging why GitHub couldn't build, it I had a working site! It was sadly the default Blowfish themed site, and this wouldn't do. Coincidentally, I built this cool looking Perlin Theme in Python the other day:
 
 ```
 import pygame  
@@ -84,4 +86,4 @@ With the why and how of this website now explained, the more trivial "what" rema
 
 If anyone does happen to stumble across this from my, what I'm sure is amazing SEO, and was hoping for a more technical write-up, that is sadly not something I will get around to (definitely not due to my lack of domain knowledge). But all the files are up at my [GitHub](https://github.com/tecknet-gg/blog). If you have any questions for whatever reason, feel free to contact me! 
 
-Welp, thank you for wasting however many minutes Hugo thinks this post is, reading this. Till next time?
+Welp, anyways, thank you for wasting however many minutes Hugo thinks this post is, reading this.

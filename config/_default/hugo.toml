@@ -34,6 +34,10 @@ enableEmoji = true
 [imaging]
   anchor = 'Center'
 
+[markup]
+  [markup.highlight]
+    noClasses = false
+
 [taxonomies]
   tag = "tags"
   category = "categories"
@@ -77,3 +81,4 @@ enableEmoji = true
       name = 'fragmentrefs'
       type = 'fragments'
       weight = 10
+

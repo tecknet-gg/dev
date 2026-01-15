@@ -1,3 +1,4 @@
+/* global glass overlay */
 .type-posts main::before,
 .kind-page:not(.layout-about):not(.home) main::before,
 body::before {
@@ -14,6 +15,8 @@ body::before {
     pointer-events: none; 
 }
 
+
+/* card glass style */
 article.relative.flex.flex-col, 
 .thumbnail_card,
 article.min-h-full,
@@ -24,7 +27,7 @@ article.min-h-full,
     background-color: rgba(15, 15, 20, 0.6) !important;
 }
 
-
+/* transparent base */
 .bg-neutral, 
 .dark .bg-neutral-800,
 main#main-content,
@@ -32,12 +35,12 @@ body {
     background-color: transparent !important;
 }
 
-
+/* global text color */
 h1, h2, h3, .prose, .main-menu a, .text-neutral-900 {
     color: #ffffff !important;
 }
 
-
+/* profile image cleanup */
 img.rounded-full {
     background: transparent !important;
     border: none !important;
@@ -46,6 +49,7 @@ img.rounded-full {
     max-width: 200px; 
 }
 
+/* prose width control */
 .max-w-prose, 
 #main-content .prose, 
 article { 
@@ -55,36 +59,36 @@ article {
     width: 100% !important;
 }
 
-/* Add a subtle shine when hovering over cards */
+/* card hover effect */
 article.relative.flex.flex-col:hover, 
 .thumbnail_card:hover {
     background-color: rgba(255, 255, 255, 0.08) !important;
     border: 1px solid rgba(255, 255, 255, 0.3) !important;
     transform: translateY(-4px);
-    box-shadow: 0 0 30px rgba(59, 130, 246, 0.2) !important; /* Subtle blue glow */
+    box-shadow: 0 0 30px rgba(59, 130, 246, 0.2) !important;
     transition: all 0.3s ease-in-out;
 }
 
-
-/* Sharp White Headline */
+/* typeit headline */
 #typeit-target {
     color: #ffffff !important; 
     font-size: 1.1em;
-    text-shadow: none !important; /* Removes any leftover glow */
+    text-shadow: none !important;
     font-weight: 500;
 }
 
-/* Customize the cursor to be white as well */
+/* typeit cursor */
 .ti-cursor {
     color: #ffffff !important;
     font-weight: bold;
 }
 
-/* Remove the "guest@tecknet" prompt if you don't want it anymore */
+/* typeit prefix removal */
 #typeit-target::before {
     content: "" !important;
 }
 
+/* headline emphasis */
 .layout-profile h1, 
 article h2, 
 .prose h1, .prose h2 {
@@ -92,19 +96,21 @@ article h2,
     text-shadow: 0 0 15px rgba(255, 255, 255, 0.2), 0 2px 4px rgba(0,0,0,0.8) !important;
 }
 
-
+/* secondary text */
 .text-xl, 
 .text-neutral-500, 
 .prose {
     color: rgba(255, 255, 255, 0.85) !important;
 }
 
+/* typeit emphasis */
 #typeit-target {
     color: #ffffff !important;
-    font-weight: 700 !important; /* Bolder look from original */
+    font-weight: 700 !important;
     letter-spacing: 0.02em;
 }
 
+/* menu links */
 .main-menu a {
     color: rgba(255, 255, 255, 0.7) !important;
 }
@@ -114,7 +120,7 @@ article h2,
     text-decoration: underline;
 }
 
-/* Base state: White */
+/* base links */
 a, 
 .text-primary-600,
 .main-menu a,
@@ -124,32 +130,34 @@ a,
     transition: color 0.2s ease-in-out;
 }
 
-/* Hover state: Blue */
+/* hover links */
 a:hover, 
 .main-menu a:hover,
 .layout-profile .flex.flex-row a:hover {
     color: #ea9814 !important; 
 }
 
-
+/* prose text */
 .prose, 
 .text-neutral-500, 
 .text-neutral-600,
 article p,
 section p {
-    color: #ffffff !important; /* Pure White */
-    font-weight: 500 !important; /* Makes it "thicker" without being "bold" */
-    opacity: 1 !important;    /* Removes any theme transparency */
-    line-height: 1.7;          /* Adds a bit of space for readability */
+    color: #ffffff !important;
+    font-weight: 500 !important;
+    opacity: 1 !important;
+    line-height: 1.7;
     -webkit-font-smoothing: antialiased;
 }
 
+/* prose headings */
 .prose h1, .prose h2, .prose h3 {
     color: #ffffff !important;
     font-weight: 800 !important;
     letter-spacing: -0.01em;
 }
 
+/* card text */
 .thumbnail_card .text-neutral-800,
 .thumbnail_card .text-neutral-700,
 article .flex-grow p {
@@ -157,31 +165,65 @@ article .flex-grow p {
     font-weight: 500 !important;
 }
 
-/* 1. Target ONLY links inside blog/article body text */
+/* prose links */
 .prose p a, 
 .prose li a, 
 .prose blockquote a {
-    /* Force permanent Sunset Orange */
     color: #ffb347 !important;
-    background: none !important; /* Disables the gradient from the previous step */
-    -webkit-text-fill-color: initial !important; /* Resets the transparent text trick */
-    
+    background: none !important;
+    -webkit-text-fill-color: initial !important;
     font-weight: 700 !important;
     text-decoration: none !important;
     transition: all 0.3s ease;
-    
-    /* Subtle orange glow to match the TypeIt text */
     text-shadow: 0 0 5px rgba(255, 179, 71, 0.2);
 }
 
-/* 2. Hover effect for these specific blog links */
+/* prose link hover */
 .prose p a:hover, 
 .prose li a:hover, 
 .prose blockquote a:hover {
-    color: #ffffff !important; /* Flips to white on hover for contrast */
+    color: #ffffff !important;
     text-shadow: 0 0 10px rgba(255, 179, 71, 0.5);
-    background-color: rgba(255, 179, 71, 0.1) !important; /* Slight highlight */
+    background-color: rgba(255, 179, 71, 0.1) !important;
 }
 
-/* 3. Ensure other links (Nav, Profile, Socials) stay as they were */
-/* No changes needed here, as the selectors above are very specific to article body text */
+/* code reset */
+.highlight, .chroma, .highlight div, .highlight table, 
+.highlight td, .highlight pre, .highlight code {
+    background: transparent !important;
+    border: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+/* code container */
+.highlight {
+    background-color: rgba(30, 31, 34, 0.8) !important;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    border-radius: 12px !important;
+    padding: 1.2rem !important;
+    margin: 2rem 0 !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    display: block;
+    overflow-x: auto;
+}
+
+/* code text */
+.highlight code {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #a9b7c6 !important;
+    display: block;
+}
+
+/* inline code */
+.prose :not(pre) > code {
+    background-color: rgba(255, 179, 71, 0.15) !important;
+    color: #ffb347 !important;
+    padding: 0.2rem 0.4rem !important;
+    border-radius: 6px !important;
+}
+
+

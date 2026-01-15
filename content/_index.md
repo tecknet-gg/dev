@@ -19,7 +19,7 @@ Hi! I'm Jeevan, a 16 year old student slogging through their A-Levels. This site
       strings: ["Student", "Engineer", "Self Proclaimed Nerd", "I'm running out of tags", "I'll stop now...","tecknet.gg"],
       speed: 60,
       deleteSpeed: 40,
-      nextStringDelay: 1500,
+      nextStringDelay: 1000,
       breakLines: false,
       loop: false,
       cursor: true,

@@ -13,10 +13,10 @@
     
     <item>
       <title>Cool little portfolio with Hugo</title>
-      <link>http://localhost:1313/blog/this-website/</link>
+      <link>http://localhost:1313/blog/making-portfolio/</link>
       <pubDate>Sun, 11 Jan 2026 00:00:00 +0000</pubDate>
       <author>hattijeevan@example.com (Jeevan Hatti)</author>
-      <guid>http://localhost:1313/blog/this-website/</guid>
+      <guid>http://localhost:1313/blog/making-portfolio/</guid>
       <description>The tech stack I used for this static site.</description>
       
     </item>
